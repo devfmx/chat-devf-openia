@@ -1,11 +1,16 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import useOpenApi from "../hooks/useOpenApi";
 
 const InputBox = () => {
+  const { handleSendMessage, response, onLoading } = useOpenApi();
+  // por el momento mostramos la respuesta en consola
+  console.log("response", onLoading);
+  console.log(response);
   // EXPLICAR EL ...HOOK QUE ES UNA FORMA DE DESGLOSAR UN OBJETO
   const { register, handleSubmit, ...hook } = useForm();
   const onSubmit = handleSubmit((data) => {
-    console.log(data);
+    handleSubmit(handleSendMessage(data.message));
     setTimeout(() => {
       // LIMPIAR EL INPUT
       hook.reset();
