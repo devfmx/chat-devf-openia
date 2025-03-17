@@ -9,6 +9,11 @@ Este proyecto tiene como objetivo crear un clon de DeepSeek o ChatGPT, utilizand
 0. **Tema 00: Instalación, Implementación de Tailwind CSS y Diseño Básico**
    - **Rama:** `feature/setup-tailwind`
    - **Descripción:** Configuración inicial del proyecto, instalación de Tailwind CSS y creación de un diseño básico para la interfaz de usuario.
+   - **Promt:**
+        - Crea un componente de React con la interfaz basica de la pagina web de open-ia o deepseek.
+   - **Links de Interés:**
+        - https://tailwindcss.com/docs/installation/using-vite
+        - https://vite.dev/
 
 1. **Lectura 01: React Hook Form y Validación de formularios avanzada**
    - **Rama:** `feature/react-hook-form`
@@ -16,7 +21,7 @@ Este proyecto tiene como objetivo crear un clon de DeepSeek o ChatGPT, utilizand
 
 2. **Lectura 02: Consumo de APIs (useEffect)**
    - **Rama:** `feature/api-consumption`
-   - **Descripción:** Uso de `useEffect` en React para consumir APIs y manejar datos asíncronos.
+   - **Descripción:** Uso de `useEffect`, `hooks avanzados` y `fetch` para consumir APIs en una aplicación React.
 
 3. **Lectura 03: State Management with useContext**
    - **Rama:** `feature/use-context`
