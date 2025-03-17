@@ -14,6 +14,8 @@ function globalReducer(state, action) {
         sender: "bot",
         text: action.payload,
       };
+
+      localStorage.setItem("chat", JSON.stringify([...state.chat, payload]));
       return {
         ...state,
         chat: [...state.chat, payload],
@@ -25,9 +27,19 @@ function globalReducer(state, action) {
         sender: "user",
         text: action.payload,
       };
+
+      localStorage.setItem("chat", JSON.stringify([...state.chat, payload]));
       return {
         ...state,
         chat: [...state.chat, payload],
+      };
+    }
+    case "@LOAD_CURRENT_CHAT": {
+      const chat = localStorage.getItem("chat");
+      if (!chat) return state;
+      return {
+        ...state,
+        chat: JSON.parse(chat),
       };
     }
     default: {
