@@ -21,7 +21,7 @@ Este proyecto tiene como objetivo crear un clon de DeepSeek o ChatGPT, utilizand
 
 2. **Lectura 02: Consumo de APIs (useEffect)**
    - **Rama:** `feature/api-consumption`
-   - **Descripción:** Uso de `useEffect`, `hooks avanzados` y `fetch` para consumir APIs en una aplicación React.
+   - **Descripción:** Uso de `useEffect` en React para consumir APIs y manejar datos asíncronos.
 
 3. **Lectura 03: State Management with useContext**
    - **Rama:** `feature/use-context`
